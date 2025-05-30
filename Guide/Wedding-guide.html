@@ -1,0 +1,618 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Filipino Wedding Photography Guide</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet">
+  <style>
+    /* Base Reset and Typography */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      color: #555759;
+      background-color: #ffffff;
+      scroll-behavior: smooth;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+    h1, h2, h3 {
+      color: #2D3032;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    
+    /* Container */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+    
+    /* Header and Navigation */
+    header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      margin: 10px 0;
+    }
+    nav ul {
+      display: flex;
+      gap: 15px;
+    }
+    nav li {
+      display: inline;
+    }
+    nav a {
+      padding: 10px;
+      color: #555759;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #2D3032;
+    }
+    
+    /* Hero Section */
+    #hero {
+      background: url('https://via.placeholder.com/1920x600?text=Filipino+Wedding') no-repeat center/cover;
+      color: #ffffff;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+    #hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(45,48,50,0.5);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    #hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    #hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .btn {
+      background-color: #555759;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #2D3032;
+    }
+    
+    /* Section Card Styles */
+    .section-card {
+      background-color: #ffffff;
+      border: 1px solid #e6e6e6;
+      border-radius: 8px;
+      margin: 40px 0;
+      padding: 20px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .section-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .section-card h2 {
+      margin-bottom: 10px;
+      border-bottom: 2px solid #2D3032;
+      padding-bottom: 5px;
+    }
+    .timeline {
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+    
+    /* Accordion */
+    .accordion-toggle {
+      background-color: #2D3032;
+      color: #ffffff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      width: 100%;
+      text-align: left;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-bottom: 10px;
+      transition: background-color 0.3s ease;
+    }
+    .accordion-toggle.active {
+      background-color: #555759;
+    }
+    .accordion-content {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s ease-in-out;
+    }
+    .accordion-content h3 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+    .accordion-content ul {
+      margin-bottom: 15px;
+    }
+    
+    /* Footer */
+    footer {
+      background-color: #2D3032;
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    footer .footer-links a {
+      color: #ffffff;
+      margin: 0 10px;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+    footer .footer-links a:hover {
+      color: #cccccc;
+    }
+    
+    /* Responsive Navigation (Hamburger Menu) */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border: 1px solid #ccc;
+        display: none;
+      }
+      nav ul.active {
+        display: flex;
+      }
+      nav li {
+        padding: 10px 0;
+      }
+      .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #555759;
+      }
+    }
+    @media (min-width: 769px) {
+      .menu-toggle {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with Navigation -->
+  <header>
+    <div class="container">
+      <h1>Filipino Wedding Photography Guide</h1>
+      <div class="menu-toggle">&#9776;</div>
+      <nav>
+        <ul>
+          <li><a href="#prep">Pre-Wedding Prep</a></li>
+          <li><a href="#transition">Transition to Church</a></li>
+          <li><a href="#ceremony">Church Ceremony</a></li>
+          <li><a href="#post-ceremony">Post-Ceremony</a></li>
+          <li><a href="#reception">Reception Celebration</a></li>
+          <li><a href="#post-event">Post-Event Editing</a></li>
+          <li><a href="#shotlist">Shot List & Pose Guide</a></li>
+          <li><a href="#resources">Additional Tips</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h2>Capture Every Moment</h2>
+      <p>Your comprehensive guide to mastering Filipino wedding photography in every phase.</p>
+      <a href="#prep" class="btn">Get Started</a>
+    </div>
+  </section>
+  
+  <!-- Section 1: Pre-Wedding Preparation / Getting Ready -->
+  <section id="prep" class="section-card">
+    <h2>Pre-Wedding Preparation / Getting Ready</h2>
+    <p class="timeline"><strong>Timeline:</strong> Typically 2–3 hours before the ceremony (e.g., if the ceremony is at 11:00 AM, aim to start at 7:30–8:00 AM).</p>
+    <button class="accordion-toggle">Toggle To‑Do Checklist</button>
+    <div class="accordion-content">
+      <h3>To‑Do Checklist:</h3>
+      <ul>
+        <li><strong>Gear & Equipment:</strong>
+          <ul>
+            <li>Confirm your gear: batteries, memory cards, backup cameras.</li>
+            <li>Pack protective covers, lens cloths, and weather‑sealing gear.</li>
+          </ul>
+        </li>
+        <li><strong>Client Communication & Timeline Confirmation:</strong>
+          <ul>
+            <li>Review and finalize the shot list and timeline with the couple.</li>
+            <li>Confirm any special requests or cultural elements.</li>
+          </ul>
+        </li>
+        <li><strong>Venue & Location:</strong>
+          <ul>
+            <li>Scout the location for optimal natural light and backdrops.</li>
+            <li>Note details like dress, accessories, makeup, and hair.</li>
+          </ul>
+        </li>
+        <li><strong>Candid & Detail Shots:</strong>
+          <ul>
+            <li>Capture intimate moments during hair, makeup, and wardrobe preparations.</li>
+            <li>Focus on details like the bride’s dress, jewelry, bouquet, and sentimental items.</li>
+          </ul>
+        </li>
+        <li><strong>Additional Tips:</strong>
+          <ul>
+            <li>Arrive early for a quick gear test.</li>
+            <li>Discuss creative ideas with the couple to capture their unique style.</li>
+            <li>Test ambient light setups if shooting outdoors.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Section 2: Transition and Arrival at the Church -->
+  <section id="transition" class="section-card">
+    <h2>Transition and Arrival at the Church</h2>
+    <p class="timeline"><strong>Timeline:</strong> Aim to arrive at the church 30–45 minutes before the ceremony.</p>
+    <button class="accordion-toggle">Toggle To‑Do Checklist</button>
+    <div class="accordion-content">
+      <h3>To‑Do Checklist:</h3>
+      <ul>
+        <li><strong>Exterior & Venue Detail Shots:</strong>
+          <ul>
+            <li>Photograph the church façade, entrance, and surrounding decor.</li>
+            <li>Capture floral arrangements, signage, or special decorations.</li>
+          </ul>
+        </li>
+        <li><strong>Interior Preparation:</strong>
+          <ul>
+            <li>Document the altar, stained glass, and other religious details.</li>
+            <li>Be mindful of flash restrictions and movement inside sacred spaces.</li>
+          </ul>
+        </li>
+        <li><strong>Coordination:</strong>
+          <ul>
+            <li>Check in with the officiant or church staff for photography protocols.</li>
+          </ul>
+        </li>
+        <li><strong>Additional Tips:</strong>
+          <ul>
+            <li>Maintain a respectful distance while capturing architectural details.</li>
+            <li>Ask for guidance if unsure about any restricted areas.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Section 3: Church Ceremony -->
+  <section id="ceremony" class="section-card">
+    <h2>Church Ceremony</h2>
+    <p class="timeline"><strong>Timeline:</strong> Typically 30–60 minutes.</p>
+    <button class="accordion-toggle">Toggle To‑Do Checklist</button>
+    <div class="accordion-content">
+      <h3>To‑Do Checklist:</h3>
+      <ul>
+        <li><strong>Entrance & Anticipation:</strong>
+          <ul>
+            <li>Capture the couple’s and guests’ arrival with anticipatory expressions.</li>
+          </ul>
+        </li>
+        <li><strong>Key Rituals:</strong>
+          <ul>
+            <li>Document the exchange of vows, ring exchange, and prayers.</li>
+            <li>Focus on cultural aspects (cord & veil ceremonies) if applicable.</li>
+            <li>Use silent shooting modes to remain unobtrusive.</li>
+          </ul>
+        </li>
+        <li><strong>Interior Aesthetics:</strong>
+          <ul>
+            <li>Highlight details such as the altar, candles, and religious symbols.</li>
+            <li>Combine wide and close-up shots for an intimate feel.</li>
+          </ul>
+        </li>
+        <li><strong>Technical & Creative Tips:</strong>
+          <ul>
+            <li>Adjust ISO and shutter speed to account for low-light church interiors.</li>
+            <li>Experiment with unique angles and reflections.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Section 4: Post-Ceremony / Transition to Reception -->
+  <section id="post-ceremony" class="section-card">
+    <h2>Post-Ceremony / Transition to Reception</h2>
+    <p class="timeline"><strong>Timeline:</strong> Immediately after the ceremony until the reception begins.</p>
+    <button class="accordion-toggle">Toggle To‑Do Checklist</button>
+    <div class="accordion-content">
+      <h3>To‑Do Checklist:</h3>
+      <ul>
+        <li><strong>Departure Moments:</strong>
+          <ul>
+            <li>Capture the couple’s exit, including farewell moments.</li>
+          </ul>
+        </li>
+        <li><strong>In-between Shots:</strong>
+          <ul>
+            <li>Snap candid group or portrait shots during transit.</li>
+          </ul>
+        </li>
+        <li><strong>Additional Details:</strong>
+          <ul>
+            <li>Document transitional moments like quick toasts or scenic backdrops.</li>
+          </ul>
+        </li>
+        <li><strong>Additional Tips:</strong>
+          <ul>
+            <li>Keep your gear ready with quick adjustments for changing light.</li>
+            <li>Engage family members for genuine, spontaneous moments.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Section 5: Reception Celebration -->
+  <section id="reception" class="section-card">
+    <h2>Reception Celebration</h2>
+    <p class="timeline"><strong>Timeline:</strong> From the start of the reception until the event winds down.</p>
+    <button class="accordion-toggle">Toggle To‑Do Checklist</button>
+    <div class="accordion-content">
+      <h3>To‑Do Checklist:</h3>
+      <ul>
+        <li><strong>Venue & Ambiance:</strong>
+          <ul>
+            <li>Capture decor, table settings, ambient lighting, and backdrops.</li>
+          </ul>
+        </li>
+        <li><strong>Entrance & First Impressions:</strong>
+          <ul>
+            <li>Document the couple’s grand entrance and guests’ reactions.</li>
+          </ul>
+        </li>
+        <li><strong>Formal & Group Poses:</strong>
+          <ul>
+            <li>Arrange group photos with family and friends using engaging compositions.</li>
+          </ul>
+        </li>
+        <li><strong>Candid Moments & Celebrations:</strong>
+          <ul>
+            <li>Focus on dancing, heartfelt speeches, and spontaneous laughter.</li>
+            <li>Include highlights like the “Money Dance”, cake cutting, or bouquet toss.</li>
+          </ul>
+        </li>
+        <li><strong>Creative & Dynamic Shots:</strong>
+          <ul>
+            <li>Experiment with unique angles, creative lighting, or even video clips.</li>
+          </ul>
+        </li>
+        <li><strong>Event Wrap-Up:</strong>
+          <ul>
+            <li>Capture final dance moments, dusk or nighttime scenes, and sparkler exits.</li>
+          </ul>
+        </li>
+        <li><strong>Additional Tips:</strong>
+          <ul>
+            <li>Try long exposures for dynamic lighting during the dance.</li>
+            <li>Balance between posed and candid images to tell a complete story.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Section 6: Post-Event and Editing Phase -->
+  <section id="post-event" class="section-card">
+    <h2>Post-Event and Editing Phase</h2>
+    <button class="accordion-toggle">Toggle To‑Do Checklist</button>
+    <div class="accordion-content">
+      <h3>To‑Do Checklist:</h3>
+      <ul>
+        <li><strong>Immediate Backup:</strong>
+          <ul>
+            <li>Back up images on at least two separate drives immediately.</li>
+          </ul>
+        </li>
+        <li><strong>Review & Editing:</strong>
+          <ul>
+            <li>Review and select key moments for post-production.</li>
+            <li>Enhance warm tones and preserve the authentic atmosphere without over-processing.</li>
+          </ul>
+        </li>
+        <li><strong>Timely Delivery & Follow-Up:</strong>
+          <ul>
+            <li>Confirm delivery dates with the couple and be receptive to feedback.</li>
+          </ul>
+        </li>
+        <li><strong>Editing & Workflow Tips:</strong>
+          <ul>
+            <li>Use dual monitors to maintain color accuracy and detail.</li>
+            <li>Establish a batch-editing workflow for consistency across images.</li>
+            <li>Request feedback to refine your editing style for future projects.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Section 7: Shot List & Pose Guide -->
+  <section id="shotlist" class="section-card">
+    <h2>Shot List & Pose Guide</h2>
+    <p>This section provides detailed shot list ideas and pose inspiration for each major phase of the wedding day.</p>
+    <button class="accordion-toggle">Toggle Shot List Details</button>
+    <div class="accordion-content">
+      <h3>Pre-Wedding Preparation</h3>
+      <ul>
+        <li><strong>Detail & Candid Shots:</strong>
+          <ul>
+            <li>Close-ups of makeup, hair, and accessories (jewelry, bouquet, dress details).</li>
+            <li>Behind‑the‑scenes candid shots of the bridal party laughing, the groom and his groomsmen gearing up.</li>
+          </ul>
+        </li>
+        <li><strong>Poses & Creative Ideas:</strong>
+          <ul>
+            <li>Mirror poses of the bride adjusting her jewelry or makeup reflection shots.</li>
+            <li>Over-the-shoulder or window‑framed shots focusing on the transformation process.</li>
+          </ul>
+        </li>
+      </ul>
+      <h3>Church Ceremony</h3>
+      <ul>
+        <li><strong>Establishing and Ritual Shots:</strong>
+          <ul>
+            <li>Exterior wide-angle shots of the church and decor details.</li>
+            <li>Close-ups during the exchange of vows, ring exchange, and cultural rituals (e.g., cord & veil).</li>
+          </ul>
+        </li>
+        <li><strong>Creative Composition:</strong>
+          <ul>
+            <li>Shoot reflections in polished floors or captured candlelight highlighting emotions.</li>
+            <li>Utilize a shallow depth-of-field to isolate the couple against a blurred background.</li>
+          </ul>
+        </li>
+      </ul>
+      <h3>Reception Celebration</h3>
+      <ul>
+        <li><strong>Entrance & Group Moments:</strong>
+          <ul>
+            <li>Dynamic shots capturing the couple’s grand entrance and guests’ reactions.</li>
+            <li>Formal group shots with creative arrangements and candid interaction between family and friends.</li>
+          </ul>
+        </li>
+        <li><strong>Candid & Creative Shots:</strong>
+          <ul>
+            <li>Document spontaneous dance floor energy, speeches, and affectionate exchanges.</li>
+            <li>Experiment with silhouettes, slow shutter speeds for creative motion blur, or colored lighting setups.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Section 8: Additional Useful Tips & Resources -->
+  <section id="resources" class="section-card">
+    <h2>Additional Useful Tips & Resources</h2>
+    <p>This section offers extra advice and resources to help elevate your photography game:</p>
+    <ul>
+      <li><strong>Pre-Shoot Checklist:</strong> Create a detailed gear checklist and review it 24 hours before the event.</li>
+      <li><strong>Clear Communication:</strong> Keep an open dialogue with the couple and vendors to understand must-capture moments.</li>
+      <li><strong>Cultural Sensitivity:</strong> Respect local traditions; ask questions about rituals for authentic captures.</li>
+      <li><strong>Backup Plans:</strong> Always have extra batteries, memory cards, and a secondary camera.</li>
+      <li><strong>Creative Experimentation:</strong> Experiment with different angles and lighting techniques tailored to the tropical ambiance.</li>
+      <li><strong>Consistent Editing Workflow:</strong> Develop a signature editing style enhancing natural beauty and storytelling.</li>
+      <li><strong>Marketing Your Work:</strong> Share behind‑the‑scenes stories and polished images on social media to grow your portfolio.</li>
+      <li><strong>Networking:</strong> Connect with local photographers and industry professionals to exchange ideas and referrals.</li>
+    </ul>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Filipino Wedding Photography Guide</p>
+      <div class="footer-links">
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#">More Tips</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    // Smooth Scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+  
+    // Toggle Navigation on Mobile
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector("nav ul");
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+  
+    // Accordion Toggle Functionality
+    const accordionToggles = document.querySelectorAll(".accordion-toggle");
+    accordionToggles.forEach(toggle => {
+      toggle.addEventListener("click", function() {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+  
+    // Intersection Observer for Section Fade-In Animations
+    const observerOptions = {
+      threshold: 0.1
+    };
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, observerOptions);
+  
+    document.querySelectorAll(".section-card").forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>

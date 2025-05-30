@@ -1,0 +1,604 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1" />
+  <title>Filipino Christening Photography Guide</title>
+  <!-- Google Font -->
+  <link href="https://fonts.googleapis.com/css?family=Montserrat:400,700&display=swap" rel="stylesheet" />
+  <style>
+    /* Base Reset and Typography */
+    *, *::before, *::after {
+      box-sizing: border-box;
+      margin: 0;
+      padding: 0;
+    }
+    body {
+      font-family: 'Montserrat', sans-serif;
+      line-height: 1.6;
+      color: #555759;
+      background-color: #ffffff;
+      scroll-behavior: smooth;
+    }
+    a {
+      text-decoration: none;
+      color: inherit;
+      cursor: pointer;
+    }
+    h1, h2, h3 {
+      color: #2D3032;
+    }
+    ul {
+      list-style-type: disc;
+      margin-left: 20px;
+    }
+    p {
+      margin-bottom: 1rem;
+    }
+    
+    /* Container */
+    .container {
+      width: 90%;
+      max-width: 1200px;
+      margin: 0 auto;
+      padding: 20px 0;
+    }
+    
+    /* Header and Navigation */
+    header {
+      background-color: #ffffff;
+      border-bottom: 1px solid #ccc;
+      position: sticky;
+      top: 0;
+      z-index: 1000;
+    }
+    header .container {
+      display: flex;
+      justify-content: space-between;
+      align-items: center;
+    }
+    header h1 {
+      font-size: 1.8rem;
+      margin: 10px 0;
+    }
+    nav ul {
+      display: flex;
+      gap: 15px;
+    }
+    nav li {
+      display: inline;
+    }
+    nav a {
+      padding: 10px;
+      color: #555759;
+      font-weight: 600;
+      transition: color 0.3s ease;
+    }
+    nav a:hover {
+      color: #2D3032;
+    }
+    
+    /* Hero Section */
+    #hero {
+      background: url('https://via.placeholder.com/1920x600?text=Filipino+Christening') no-repeat center/cover;
+      color: #ffffff;
+      text-align: center;
+      padding: 100px 20px;
+      position: relative;
+    }
+    #hero::after {
+      content: "";
+      position: absolute;
+      top: 0;
+      left: 0;
+      right: 0;
+      bottom: 0;
+      background: rgba(45, 48, 50, 0.5);
+      z-index: 1;
+    }
+    .hero-content {
+      position: relative;
+      z-index: 2;
+    }
+    #hero h2 {
+      font-size: 2.5rem;
+      margin-bottom: 20px;
+    }
+    #hero p {
+      font-size: 1.2rem;
+      margin-bottom: 30px;
+    }
+    .btn {
+      background-color: #555759;
+      color: #ffffff;
+      padding: 10px 20px;
+      border-radius: 4px;
+      transition: background-color 0.3s ease;
+    }
+    .btn:hover {
+      background-color: #2D3032;
+    }
+    
+    /* Section Card Styles */
+    .section-card {
+      background-color: #ffffff;
+      border: 1px solid #e6e6e6;
+      border-radius: 8px;
+      margin: 40px 0;
+      padding: 20px;
+      opacity: 0;
+      transform: translateY(20px);
+      transition: opacity 0.6s ease, transform 0.6s ease;
+    }
+    .section-card.visible {
+      opacity: 1;
+      transform: translateY(0);
+    }
+    .section-card h2 {
+      margin-bottom: 10px;
+      border-bottom: 2px solid #2D3032;
+      padding-bottom: 5px;
+    }
+    .timeline {
+      font-style: italic;
+      margin-bottom: 15px;
+    }
+    
+    /* Accordion */
+    .accordion-toggle {
+      background-color: #2D3032;
+      color: #ffffff;
+      padding: 10px;
+      border: none;
+      border-radius: 4px;
+      width: 100%;
+      text-align: left;
+      font-size: 1rem;
+      cursor: pointer;
+      margin-bottom: 10px;
+      transition: background-color 0.3s ease;
+    }
+    .accordion-toggle.active {
+      background-color: #555759;
+    }
+    .accordion-content {
+      overflow: hidden;
+      max-height: 0;
+      transition: max-height 0.4s ease-in-out;
+    }
+    .accordion-content h3 {
+      margin-top: 10px;
+      margin-bottom: 5px;
+    }
+    .accordion-content ul {
+      margin-bottom: 15px;
+    }
+    
+    /* Footer */
+    footer {
+      background-color: #2D3032;
+      color: #ffffff;
+      padding: 20px 0;
+      text-align: center;
+    }
+    footer .footer-links a {
+      color: #ffffff;
+      margin: 0 10px;
+      font-size: 0.9rem;
+      transition: color 0.3s ease;
+    }
+    footer .footer-links a:hover {
+      color: #cccccc;
+    }
+    
+    /* Responsive Navigation (Hamburger Menu) */
+    @media (max-width: 768px) {
+      nav ul {
+        flex-direction: column;
+        background-color: #ffffff;
+        position: absolute;
+        top: 60px;
+        right: 20px;
+        width: 200px;
+        border: 1px solid #ccc;
+        display: none;
+      }
+      nav ul.active {
+        display: flex;
+      }
+      nav li {
+        padding: 10px 0;
+      }
+      .menu-toggle {
+        display: block;
+        font-size: 1.5rem;
+        cursor: pointer;
+        color: #555759;
+      }
+    }
+    @media (min-width: 769px) {
+      .menu-toggle {
+        display: none;
+      }
+    }
+  </style>
+</head>
+<body>
+  <!-- Header with Navigation -->
+  <header>
+    <div class="container">
+      <h1>Filipino Christening Photography Guide</h1>
+      <div class="menu-toggle">&#9776;</div>
+      <nav>
+        <ul>
+          <li><a href="#prep">Pre-Church Prep</a></li>
+          <li><a href="#transition">Transition to Church</a></li>
+          <li><a href="#ceremony">Christening Ceremony</a></li>
+          <li><a href="#post-ceremony">Post-Ceremony</a></li>
+          <li><a href="#reception">Reception Celebration</a></li>
+          <li><a href="#post-event">Post-Event Editing</a></li>
+          <li><a href="#shotlist">Shot List & Pose Guide</a></li>
+          <li><a href="#resources">Additional Tips</a></li>
+        </ul>
+      </nav>
+    </div>
+  </header>
+  
+  <!-- Hero Section -->
+  <section id="hero">
+    <div class="hero-content">
+      <h2>Capture Every Precious Moment</h2>
+      <p>Your comprehensive guide to mastering Filipino christening photography in every phase.</p>
+      <a href="#prep" class="btn">Get Started</a>
+    </div>
+  </section>
+  
+  <!-- Section 1: Pre-Church Preparation / Getting Ready -->
+  <section id="prep" class="section-card">
+    <h2>Pre-Church Preparation / Getting Ready</h2>
+    <p class="timeline"><strong>Timeline:</strong> Typically 1–2 hours before the ceremony starts.</p>
+    <button class="accordion-toggle">Toggle To‑Do Checklist</button>
+    <div class="accordion-content">
+      <h3>To‑Do Checklist:</h3>
+      <ul>
+        <li><strong>Gear & Equipment:</strong>
+          <ul>
+            <li>Test your cameras, lenses, batteries, memory cards, and backup gear.</li>
+            <li>Pack protective gear in case of unpredictable weather.</li>
+          </ul>
+        </li>
+        <li><strong>Client Communication & Timeline:</strong>
+          <ul>
+            <li>Meet with the family to understand their vision for the christening.</li>
+            <li>Review the timeline including the pre-ceremony setup and family portraits.</li>
+          </ul>
+        </li>
+        <li><strong>Venue & Styling:</strong>
+          <ul>
+            <li>Scout the preparation location (home or hotel) for natural light and a calm setting.</li>
+            <li>Note details like the infant's outfit, baptismal gown, and accessories.</li>
+          </ul>
+        </li>
+        <li><strong>Candid & Detail Shots:</strong>
+          <ul>
+            <li>Capture tender moments between parents and baby, dressing up details, and expressive interactions with godparents.</li>
+          </ul>
+        </li>
+        <li><strong>Additional Tips:</strong>
+          <ul>
+            <li>Arrive early for a quick gear test.</li>
+            <li>Discuss creative ideas with the family to showcase their unique traditions.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Section 2: Transition and Arrival at the Church -->
+  <section id="transition" class="section-card">
+    <h2>Transition and Arrival at the Church</h2>
+    <p class="timeline"><strong>Timeline:</strong> Arrive 20–30 minutes before the ceremony to capture venue details.</p>
+    <button class="accordion-toggle">Toggle To‑Do Checklist</button>
+    <div class="accordion-content">
+      <h3>To‑Do Checklist:</h3>
+      <ul>
+        <li><strong>Exterior & Venue Detail Shots:</strong>
+          <ul>
+            <li>Photograph the church façade, entrance, and any religious symbols displayed outside.</li>
+            <li>Capture floral arrangements or decorations set to welcome guests.</li>
+          </ul>
+        </li>
+        <li><strong>Interior Setup:</strong>
+          <ul>
+            <li>Document the altar, baptismal font, candles, stained glass, and other sacred elements.</li>
+            <li>Note restrictions on flash or movement; be mindful in low-light settings.</li>
+          </ul>
+        </li>
+        <li><strong>Coordination:</strong>
+          <ul>
+            <li>Check in with the officiant or church staff to confirm any protocols.</li>
+          </ul>
+        </li>
+        <li><strong>Additional Tips:</strong>
+          <ul>
+            <li>Maintain a respectful distance while photographing architectural details.</li>
+            <li>Ask for guidance if you’re unsure about any restricted areas.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Section 3: Christening Ceremony -->
+  <section id="ceremony" class="section-card">
+    <h2>Christening Ceremony</h2>
+    <p class="timeline"><strong>Timeline:</strong> Typically 30–45 minutes.</p>
+    <button class="accordion-toggle">Toggle To‑Do Checklist</button>
+    <div class="accordion-content">
+      <h3>To‑Do Checklist:</h3>
+      <ul>
+        <li><strong>Entrance & Anticipation:</strong>
+          <ul>
+            <li>Capture the arrival of the family, godparents, and guests with soft, anticipatory expressions.</li>
+          </ul>
+        </li>
+        <li><strong>Key Rituals:</strong>
+          <ul>
+            <li>Document the blessing, water immersion (if applicable), and the priest’s rites.</li>
+            <li>Focus on the infant’s delicate expressions and the tender emotions of the parents and godparents.</li>
+            <li>Use silent shooting modes to remain unobtrusive during the sacred moments.</li>
+          </ul>
+        </li>
+        <li><strong>Interior Aesthetics:</strong>
+          <ul>
+            <li>Highlight key elements like the altar, the baptismal font, and religious icons.</li>
+            <li>Combine wide-angle and close-up shots for a balanced narrative of the ceremony.</li>
+          </ul>
+        </li>
+        <li><strong>Technical & Creative Tips:</strong>
+          <ul>
+            <li>Adjust as needed for low-light church interiors.</li>
+            <li>Experiment with creative angles and reflections to accentuate the ceremony's emotion.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Section 4: Post-Ceremony / Transition to Reception -->
+  <section id="post-ceremony" class="section-card">
+    <h2>Post-Ceremony / Transition to Reception</h2>
+    <p class="timeline"><strong>Timeline:</strong> Immediately after the ceremony until the celebration begins.</p>
+    <button class="accordion-toggle">Toggle To‑Do Checklist</button>
+    <div class="accordion-content">
+      <h3>To‑Do Checklist:</h3>
+      <ul>
+        <li><strong>Departure & Family Moments:</strong>
+          <ul>
+            <li>Capture the family’s exit from the church and any spontaneous farewell moments.</li>
+          </ul>
+        </li>
+        <li><strong>In-between Shots:</strong>
+          <ul>
+            <li>Produce candid group and portrait shots during transit to the celebration venue.</li>
+          </ul>
+        </li>
+        <li><strong>Additional Details:</strong>
+          <ul>
+            <li>Document quick exchanges of smiles or hugs that capture the emotional transition.</li>
+          </ul>
+        </li>
+        <li><strong>Additional Tips:</strong>
+          <ul>
+            <li>Keep your gear ready for rapid setup as lighting conditions change.</li>
+            <li>Engage with family members for authentic, spontaneous interactions.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Section 5: Reception Celebration -->
+  <section id="reception" class="section-card">
+    <h2>Reception Celebration</h2>
+    <p class="timeline"><strong>Timeline:</strong> From the start of the celebration until the event winds down.</p>
+    <button class="accordion-toggle">Toggle To‑Do Checklist</button>
+    <div class="accordion-content">
+      <h3>To‑Do Checklist:</h3>
+      <ul>
+        <li><strong>Venue & Decor:</strong>
+          <ul>
+            <li>Capture the reception venue, table settings, and ambient lighting details.</li>
+          </ul>
+        </li>
+        <li><strong>Entrance & Group Photos:</strong>
+          <ul>
+            <li>Document the family's grand entrance and warm reactions of guests.</li>
+            <li>Arrange formal group photos featuring close family, godparents, and friends.</li>
+          </ul>
+        </li>
+        <li><strong>Candid & Celebration Shots:</strong>
+          <ul>
+            <li>Focus on spontaneous moments during speeches, interactions, and dancing.</li>
+            <li>Include details like the cake-cutting, toast moments, and laughter-filled exchanges.</li>
+          </ul>
+        </li>
+        <li><strong>Creative & Dynamic Shots:</strong>
+          <ul>
+            <li>Experiment with unique angles or video snippets that capture the vibrancy of the celebration.</li>
+          </ul>
+        </li>
+        <li><strong>Additional Tips:</strong>
+          <ul>
+            <li>Try long exposures to emphasize movement during dancing or live moments.</li>
+            <li>Balance between formal poses and candid shots for a comprehensive story.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Section 6: Post-Event and Editing Phase -->
+  <section id="post-event" class="section-card">
+    <h2>Post-Event and Editing Phase</h2>
+    <button class="accordion-toggle">Toggle To‑Do Checklist</button>
+    <div class="accordion-content">
+      <h3>To‑Do Checklist:</h3>
+      <ul>
+        <li><strong>Immediate Backup:</strong>
+          <ul>
+            <li>Back up all images onto at least two separate drives right after the event.</li>
+          </ul>
+        </li>
+        <li><strong>Review & Editing:</strong>
+          <ul>
+            <li>Review the complete coverage and select the key moments to enhance.</li>
+            <li>Enhance the warm, natural tones while preserving the authentic emotions without over-processing.</li>
+          </ul>
+        </li>
+        <li><strong>Timely Delivery & Follow-Up:</strong>
+          <ul>
+            <li>Confirm final delivery dates with the family and be open to any revision requests.</li>
+          </ul>
+        </li>
+        <li><strong>Editing & Workflow Tips:</strong>
+          <ul>
+            <li>Use a dual-monitor setup for color accuracy and detail control.</li>
+            <li>Implement a batch-editing workflow for consistency across all images.</li>
+            <li>Request feedback for continuous improvement of your editing style.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Section 7: Shot List & Pose Guide -->
+  <section id="shotlist" class="section-card">
+    <h2>Shot List & Pose Guide</h2>
+    <p>This section provides detailed shot list ideas and pose inspiration for each key phase of the christening day.</p>
+    <button class="accordion-toggle">Toggle Shot List Details</button>
+    <div class="accordion-content">
+      <h3>Pre-Church Preparation</h3>
+      <ul>
+        <li><strong>Detail & Candid Shots:</strong>
+          <ul>
+            <li>Close-ups of the infant’s baptismal outfit, accessories, and delicate details.</li>
+            <li>Candid shots of parents, godparents, and siblings during the preparations.</li>
+          </ul>
+        </li>
+        <li><strong>Poses & Creative Ideas:</strong>
+          <ul>
+            <li>Capture the tender moments of the infant being dressed up by parents.</li>
+            <li>Use mirror or over-the-shoulder shots highlighting the transformation process.</li>
+          </ul>
+        </li>
+      </ul>
+      <h3>Christening Ceremony</h3>
+      <ul>
+        <li><strong>Ritual & Establishing Shots:</strong>
+          <ul>
+            <li>Exterior wide shots of the church and its architectural details.</li>
+            <li>Close-ups during the blessing, water immersion, and other ceremonial rites.</li>
+          </ul>
+        </li>
+        <li><strong>Creative Composition:</strong>
+          <ul>
+            <li>Capture reflections on polished surfaces or candlelight that emphasize the sanctity of the moment.</li>
+            <li>Utilize a shallow depth-of-field to isolate important details from the background.</li>
+          </ul>
+        </li>
+      </ul>
+      <h3>Reception Celebration</h3>
+      <ul>
+        <li><strong>Family & Group Poses:</strong>
+          <ul>
+            <li>Dynamic shots capturing the family and godparents in joyous group photos.</li>
+            <li>Arrange formal group portraits ensuring every key figure is included.</li>
+          </ul>
+        </li>
+        <li><strong>Candid & Creative Shots:</strong>
+          <ul>
+            <li>Document spontaneous moments during speeches, toasts, and dancing.</li>
+            <li>Experiment with silhouettes or artistic blurs to add a dynamic feel.</li>
+          </ul>
+        </li>
+      </ul>
+    </div>
+  </section>
+  
+  <!-- Section 8: Additional Useful Tips & Resources -->
+  <section id="resources" class="section-card">
+    <h2>Additional Useful Tips & Resources</h2>
+    <p>This section offers extra advice and resources to elevate your christening photography:</p>
+    <ul>
+      <li><strong>Pre-Shoot Checklist:</strong> Review your gear and finalize a detailed checklist at least 24 hours before the event.</li>
+      <li><strong>Communication:</strong> Maintain clear dialogue with the family to capture must-have moments and special traditions.</li>
+      <li><strong>Cultural Sensitivity:</strong> Respect the sacred nature of the event and ask questions about any family traditions.</li>
+      <li><strong>Backup Plans:</strong> Always have extra batteries, memory cards, and a backup camera on hand.</li>
+      <li><strong>Creative Experimentation:</strong> Try different angles and lighting techniques to best capture the ambiance of the ceremony.</li>
+      <li><strong>Consistent Editing:</strong> Develop your signature editing style that balances natural tones with the emotional essence of the event.</li>
+      <li><strong>Marketing:</strong> Share genuine behind‑the‑scenes stories alongside polished photos to build your portfolio.</li>
+      <li><strong>Networking:</strong> Network with other local photographers to stay updated on trends and share creative ideas.</li>
+    </ul>
+  </section>
+  
+  <!-- Footer -->
+  <footer>
+    <div class="container">
+      <p>© 2025 Filipino Christening Photography Guide</p>
+      <div class="footer-links">
+        <a href="#">Contact</a>
+        <a href="#">About</a>
+        <a href="#">More Tips</a>
+      </div>
+    </div>
+  </footer>
+  
+  <script>
+    // Smooth Scroll for internal links
+    document.querySelectorAll('a[href^="#"]').forEach(anchor => {
+      anchor.addEventListener("click", function(e) {
+        e.preventDefault();
+        const target = document.querySelector(this.getAttribute("href"));
+        if (target) {
+          target.scrollIntoView({ behavior: "smooth" });
+        }
+      });
+    });
+    
+    // Toggle mobile navigation
+    const menuToggle = document.querySelector(".menu-toggle");
+    const navLinks = document.querySelector("nav ul");
+    menuToggle.addEventListener("click", () => {
+      navLinks.classList.toggle("active");
+    });
+    
+    // Accordion Toggle Functionality
+    const accordionToggles = document.querySelectorAll(".accordion-toggle");
+    accordionToggles.forEach(toggle => {
+      toggle.addEventListener("click", function() {
+        this.classList.toggle("active");
+        const content = this.nextElementSibling;
+        if (content.style.maxHeight) {
+          content.style.maxHeight = null;
+        } else {
+          content.style.maxHeight = content.scrollHeight + "px";
+        }
+      });
+    });
+    
+    // Intersection Observer for Section Fade-In Animations
+    const observerOptions = { threshold: 0.1 };
+    const observer = new IntersectionObserver(entries => {
+      entries.forEach(entry => {
+        if (entry.isIntersecting) {
+          entry.target.classList.add("visible");
+        }
+      });
+    }, observerOptions);
+    document.querySelectorAll(".section-card").forEach(section => {
+      observer.observe(section);
+    });
+  </script>
+</body>
+</html>
