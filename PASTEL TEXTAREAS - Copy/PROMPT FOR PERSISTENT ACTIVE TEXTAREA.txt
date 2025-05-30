@@ -1,0 +1,87 @@
+Below is a detailed project prompt that describes the requirements and functionality for your "Persistent Active Textareas" feature. This prompt outlines the goals, design approach, and user interactions without including any code details.
+
+---
+
+ Project Title
+Persistent Active Textareas
+
+ Objective
+Develop a modern, interactive web page that displays multiple textareas in a scattered (puzzle-like) layout. When a user clicks on any textarea, it should “pop up” into a persistent, uniform state. In this state, the textarea resizes to a standard size (450 px wide by 600 px tall) and is repositioned so that all active (clicked) textareas are arranged side by side in the center of the viewport with consistent spacing (e.g., a 30 px margin). Importantly, once a textarea is in the active state, it remains there for editing—even if the user clicks or types inside it—until they click anywhere outside of any active textareas.
+
+---
+
+ Requirements
+
+1. Initial Scattered Layout:
+   - Create a webpage that generates 10 textareas dynamically.
+   - Each textarea starts with its own unique dimensions and is positioned absolutely on the page to create a scattered, puzzle-like appearance.
+   - The original sizes and positions for each textarea must be stored (using data attributes or a similar mechanism) so that they can later revert back if necessary.
+
+2. Content Configuration:
+   - Two of the textareas (for example, Textarea 1 and Textarea 2) must be preloaded with specific provided content.
+   - Additionally, Textarea 3 and Textarea 4 should include special scheduling or restart-related content. (For instance, they can include details like “What's needed: Scheduling/ 60 Month Restart” followed by various labels and instructions.)
+   - The remaining textareas may be left empty or have placeholder text.
+
+3. Persistent Active State on Click:
+   - When a user clicks on a textarea:
+     - If it is not already active, it should switch to an active (popup) state.
+     - In the active state, the textarea’s CSS positioning should change from absolute to fixed.
+     - The textarea should be resized to a uniform dimension (450 px wide by 600 px tall).
+     - All active textareas should be automatically repositioned so that they appear side by side in a centered horizontal row in the viewport. A fixed margin (e.g., 30 px) should separate each active textarea.
+   - Key Requirement: Once a textarea becomes active, it must remain in its popup (active) state regardless of user activity (clicking inside, typing, selecting the text). The only way for an active textarea to revert to its original scattered state is if the user clicks anywhere outside of the active textareas. Clicking inside an active textarea must not cancel its active state.
+
+4. Manual Deactivation:
+   - Set up a mechanism (such as a global click event on the document) so that when a user clicks anywhere outside the active textareas, all active textareas immediately revert to their original scattered state.
+   - When reverting, each textarea should restore its original dimensions and absolute position as originally defined.
+
+5. Uniform Sizing & Proper Spacing:
+   - Ensure that, upon activation, every active textarea is resized to exactly 450 px (width) by 600 px (height).
+   - Compute the positioning so that if more than one textarea is active, they are arranged in a horizontal row. The row should be centered within the viewport both vertically and horizontally.
+   - Apply a constant horizontal margin (for example, 30 px) between each active textarea.
+   - In active state, increase the z-index so that active textareas appear on top of the scattered ones.
+
+6. Responsiveness:
+   - The active textareas’ positions should be recalculated if the browser window is resized to ensure that the row remains centered.
+
+---
+
+ User Interaction Flow
+
+- Initial View:  
+  The user sees multiple textareas scattered across the page, each with varying sizes and positions. Some textareas contain prefilled content (including the special scheduling texts for Textareas 3 and 4).
+
+- Activating Textareas:  
+  When a user clicks on any textarea, that textarea becomes active:
+  - It immediately resizes to 450 px by 600 px.
+  - Its positioning changes to a fixed one, causing it to “pop up.”
+  - All currently active textareas are repositioned so they appear side by side in the middle center of the page with even spacing.
+  - Once active, if the user clicks inside or types in the textarea (for editing purposes), the active state persists—it does not revert.
+
+- Deactivation:  
+  If the user clicks anywhere outside of the active textareas, all active textareas revert to their original scattered positions, restoring their original dimensions.
+
+---
+
+ Design Considerations
+
+- UI/UX:  
+  Aim for a modern design with a clear visual hierarchy. The scattered configuration should give a playful feel, and the active state should be visually distinct (using a more pronounced box-shadow or border) to indicate readiness for editing.
+  
+- Flexibility:  
+  The active effect should support multiple active textareas simultaneously and arrange them uniformly without overlap.
+
+- Accessibility:  
+  Ensure that once a textarea is active, it remains easy to read and edit. Consider aspects like font size, padding, and contrast against the background image.
+
+---
+
+ Testing & Validation
+
+- Verify that clicking a textarea triggers the popup effect and that it remains active regardless of user input inside.
+- Test that multiple active textareas are arranged properly side by side in the center and maintain their uniform size.
+- Check that clicking outside any active textarea reverts them all to their original state.
+- Ensure proper recalculation of active positions on browser window resize.
+
+---
+
+This detailed prompt outlines all the necessary functionality and design elements to create a persistent active textarea feature, where textareas remain in their popup state until the user clicks outside. Use this prompt as a guide for your development process.
