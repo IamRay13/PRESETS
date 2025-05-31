@@ -1,0 +1,67 @@
+<x:xmpmeta xmlns:x="adobe:ns:meta/" x:xmptk="Adobe XMP Core 5.6-c140 79.160451, 2017/05/06-01:08:21        ">
+ <rdf:RDF xmlns:rdf="http://www.w3.org/1999/02/22-rdf-syntax-ns#">
+  <rdf:Description rdf:about=""
+    xmlns:crs="http://ns.adobe.com/camera-raw-settings/1.0/">
+   <crs:Version>13.2</crs:Version>
+   <crs:ProcessVersion>11.0</crs:ProcessVersion>
+   <crs:WhiteBalance>As Shot</crs:WhiteBalance>
+   <crs:Temperature>+5</crs:Temperature> <crs:Tint>-8</crs:Tint> <crs:Exposure2012>+1.20</crs:Exposure2012> <crs:Contrast2012>-25</crs:Contrast2012> <crs:Highlights2012>-80</crs:Highlights2012> <crs:Shadows2012>+75</crs:Shadows2012> <crs:Whites2012>+20</crs:Whites2012> <crs:Blacks2012>+15</crs:Blacks2012> <crs:Texture>-10</crs:Texture> <crs:Clarity2012>-15</crs:Clarity2012> <crs:Dehaze>+0</crs:Dehaze> <crs:Vibrance>+5</crs:Vibrance> <crs:Saturation>-10</crs:Saturation> <crs:ToneCurvePV2012>
+    <rdf:Seq>
+     <rdf:li>0, 30</rdf:li> <rdf:li>64, 75</rdf:li>
+     <rdf:li>128, 130</rdf:li>
+     <rdf:li>192, 190</rdf:li>
+     <rdf:li>255, 240</rdf:li> </rdf:Seq>
+   </crs:ToneCurvePV2012>
+   <crs:ToneCurvePV2012Red>
+    <rdf:Seq>
+     <rdf:li>0, 0</rdf:li>
+     <rdf:li>255, 255</rdf:li>
+    </rdf:Seq>
+   </crs:ToneCurvePV2012Red>
+   <crs:ToneCurvePV2012Green>
+    <rdf:Seq>
+     <rdf:li>0, 0</rdf:li>
+     <rdf:li>255, 255</rdf:li>
+    </rdf:Seq>
+   </crs:ToneCurvePV2012Green>
+   <crs:ToneCurvePV2012Blue>
+    <rdf:Seq>
+     <rdf:li>0, 0</rdf:li>
+     <rdf:li>255, 255</rdf:li>
+    </rdf:Seq>
+   </crs:ToneCurvePV2012Blue>
+   <crs:HueAdjustmentRed>0</crs:HueAdjustmentRed>
+   <crs:HueAdjustmentOrange>+5</crs:HueAdjustmentOrange> <crs:HueAdjustmentYellow>+10</crs:HueAdjustmentYellow> <crs:HueAdjustmentGreen>+15</crs:HueAdjustmentGreen> <crs:HueAdjustmentAqua>0</crs:HueAdjustmentAqua>
+   <crs:HueAdjustmentBlue>-5</crs:HueAdjustmentBlue> <crs:HueAdjustmentPurple>0</crs:HueAdjustmentPurple>
+   <crs:HueAdjustmentMagenta>0</crs:HueAdjustmentMagenta>
+
+   <crs:SaturationAdjustmentRed>0</crs:SaturationAdjustmentRed>
+   <crs:SaturationAdjustmentOrange>0</crs:SaturationAdjustmentOrange>
+   <crs:SaturationAdjustmentYellow>-50</crs:SaturationAdjustmentYellow> <crs:SaturationAdjustmentGreen>-60</crs:SaturationAdjustmentGreen> <crs:SaturationAdjustmentAqua>-30</crs:SaturationAdjustmentAqua> <crs:SaturationAdjustmentBlue>-20</crs:SaturationAdjustmentBlue> <crs:SaturationAdjustmentPurple>-15</crs:SaturationAdjustmentPurple>
+   <crs:SaturationAdjustmentMagenta>-10</crs:SaturationAdjustmentMagenta>
+
+   <crs:LuminanceAdjustmentRed>+10</crs:LuminanceAdjustmentRed>
+   <crs:LuminanceAdjustmentOrange>+5</crs:LuminanceAdjustmentOrange>
+   <crs:LuminanceAdjustmentYellow>-5</crs:LuminanceAdjustmentYellow>
+   <crs:LuminanceAdjustmentGreen>-10</crs:LuminanceAdjustmentGreen>
+   <crs:LuminanceAdjustmentAqua>+10</crs:LuminanceAdjustmentAqua>
+   <crs:LuminanceAdjustmentBlue>+5</crs:LuminanceAdjustmentBlue>
+   <crs:LuminanceAdjustmentPurple>0</crs:LuminanceAdjustmentPurple>
+   <crs:LuminanceAdjustmentMagenta>0</crs:LuminanceAdjustmentMagenta>
+
+   <crs:SplitToningHighlightHue>50</crs:SplitToningHighlightHue> <crs:SplitToningHighlightSaturation>8</crs:SplitToningHighlightSaturation>
+   <crs:SplitToningShadowHue>220</crs:SplitToningShadowHue> <crs:SplitToningShadowSaturation>5</crs:SplitToningShadowSaturation>
+   <crs:SplitToningBalance>0</crs:SplitToningBalance>
+
+   <crs:Sharpening>45</crs:Sharpening> <crs:SharpenRadius>1.0</crs:SharpenRadius>
+   <crs:SharpenDetail>50</crs:SharpenDetail>
+   <crs:SharpenEdgeMasking>60</crs:SharpenEdgeMasking>
+
+   <crs:LuminanceNoiseReduction>15</crs:LuminanceNoiseReduction> <crs:ColorNoiseReduction>20</crs:ColorNoiseReduction> <crs:LensProfileEnable>True</crs:LensProfileEnable>
+   <crs:LensProfileSetup>LensDefaults</crs:LensProfileSetup> <crs:VignetteAmount>0</crs:VignetteAmount> <crs:CameraProfile>Adobe Standard</crs:CameraProfile> <crs:ShadowTint>+10</crs:ShadowTint> <crs:RedHue>0</crs:RedHue>
+   <crs:RedSaturation>0</crs:RedSaturation>
+   <crs:GreenHue>-10</crs:GreenHue> <crs:GreenSaturation>0</crs:GreenSaturation>
+   <crs:BlueHue>-10</crs:BlueHue> <crs:BlueSaturation>0</crs:BlueSaturation>
+  </rdf:Description>
+ </rdf:RDF>
+</x:xmpmeta>
